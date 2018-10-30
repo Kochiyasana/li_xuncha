@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="p03.example.li.xuncha">
+
+    <!-- 声明使用相机 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ThemeSplash1">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- &lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt; -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".TianJiaXunChaActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".User_Login"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".User_yanzheng" />
+        <activity
+            android:name=".UserInformationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".XunChuaJiLu"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ImageDetailsActivity" />
+        <activity android:name=".Xunchajihua" />
+        <activity
+            android:name=".Zuixinxiaoxi"
+            android:label="最新通知" />
+        <activity android:name=".XunchaDetailsActivity" />
+        <activity android:name=".KuaiJieYongYueActivity" />
+        <activity
+            android:name=".XiaoxiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+             />
+        <activity android:name=".ChartActivity" />
+        <activity android:name=".ChartItemActivity" />
+        <activity android:name=".ChartBaritemActivity" />
+    </application>
+
+</manifest>
